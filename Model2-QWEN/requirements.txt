@@ -1,0 +1,2 @@
+# Model 2 (Qwen) uses standard Python libraries (tkinter, random).
+# No external pip dependencies are required.

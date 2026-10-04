@@ -1,0 +1,48 @@
+{
+  "gateway": {
+    "mode": "local",
+    "bind": "loopback",
+    "port": 18789,
+    "auth": { 
+      "mode": "token", 
+      "token": "YOUR_GENERATED_TOKEN" 
+    },
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789"
+      ]
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/qwen3:8b"
+      },
+      "models": {
+        "ollama/qwen3:8b": {},
+        "ollama/glm4:9b": {}
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://host.docker.internal:11434",
+        "api": "ollama",
+        "models": [
+          {
+            "id": "qwen3:8b",
+            "name": "Qwen 3 8B",
+            "contextWindow": 16384
+          },
+          {
+            "id": "glm4:9b",
+            "name": "GLM-4 9B",
+            "contextWindow": 16384
+          }
+        ]
+      }
+    }
+  }
+}

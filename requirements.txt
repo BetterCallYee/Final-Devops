@@ -1,0 +1,3 @@
+# Benchmark Dependencies
+# pygame-ce provides drop-in 'import pygame' support with prebuilt wheels across modern Python versions
+pygame-ce>=2.5.0

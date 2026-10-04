@@ -1,0 +1,2 @@
+# pygame-ce is a modern, drop-in replacement for pygame (supports Python 3.11 - 3.14+)
+pygame-ce>=2.5.0
